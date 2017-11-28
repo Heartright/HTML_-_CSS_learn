@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Lesson13_6</title>
+		<!-- <link rel="stylesheet" href="style.css"> -->
+		<style>
+			#wrap {
+				width: 1000px;
+				margin: auto;
+				border: 1px solid black;
+			}
+			header {
+				height: 200px;
+				border: 1px solid black;
+				margin-bottom: 20px;
+			}
+			#left, #right {
+				outline: 1px solid black;
+				height: 500px;
+				width: 200px;
+				float: left;
+			}
+			#left {
+				float: left;
+			}
+			#right {
+				float: right;
+			}
+			main {
+				height: 500px;
+				outline: 1px solid black;
+				margin: 0 220px;
+			}
+			footer {
+				height: 200px;
+				border: 1px solid black;
+				margin-top: 20px;
+			}
+			.clearfix {
+				clear: both;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="wrap" >
+		<header>
+			header
+		</header>
+		<aside id="left">
+			left
+		</aside>
+		<aside id="right">
+			right
+		</aside>
+		<main>
+			content
+		</main>
+		<div class="clearfix"></div>
+		<footer>
+			footer
+		</footer>
+		</div>
+	</body>
+</html>
