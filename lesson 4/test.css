@@ -1,0 +1,146 @@
+/*1*/ 
+p{
+	color:red;
+}
+/*2*/
+h1{
+	color:green;
+}
+/*3*/
+h2{
+	color:blue;
+}
+/*4*/
+h3{
+	color: #FFA500;
+} 
+/*7*/
+h2{
+	width: 300px;
+}
+/*8*/
+table{
+	width: 400px;
+	height: 200px;
+}
+/*9*/
+h1{
+	text-align: center;
+}
+/*10*/
+h2{
+	text-align: right;
+}
+/*11*/
+p{
+	text-align: justify;
+}
+/*12*/
+p{
+	text-align: center;
+}
+/*13*/
+th{
+	text-align: left;
+}
+/*14*/
+td{
+	text-align: center
+}
+/*15*/
+td{
+	 font-weight: bold;
+}
+/*16*/
+h1{
+	font-weight: normal;
+}
+/*17*/
+h1{
+	font-weight: normal;
+}
+
+h2{
+	font-weight: normal;
+}
+th{
+	font-weight: normal;
+}
+/*18*/
+h2{
+	font-style: italic;
+}
+/*19*/
+<style>
+		#normal_text{
+				font-style: inherit;
+			}
+		p{
+			font-style: italic;
+		}
+</style>
+<p id="normal_text">text</p>
+<p>text</p>
+<p>text</p>
+/*20*/
+h2{
+	font-size: 20px;
+}
+/*21*/
+p{
+	font-size: 15px;
+}
+/*22*/
+p{
+	font-family: Arial;
+}
+/*23*/
+h2{
+	font-family: 'Times New Roman';
+}
+/*24*/
+h3{
+	font-family: sans-serif;
+}
+/*25*/
+p{
+	line-height: 30px;
+}
+
+/*26*/
+/*p1{
+	 font: normal 20px Verdana;
+}
+*/
+/*27*/
+p{
+	 font: italic bold 16px/30px Arial;
+}
+/*28*/
+h1{
+	 font: normal 20px Verdana;
+}
+/*29*/
+p{
+	text-indent: 30px;
+}
+/*30*/
+<style>
+		#normal_text{
+				text-indent: inherit;
+			}
+		p{
+			text-indent: 30px;
+		}
+		</style> 
+<p>text</p>
+<p id="normal_text">text</p>
+<p>text</p>
+/*31*/
+tr{
+	vertical-align:top;
+}
+/*32*/
+th{
+	vertical-align: middle;
+}
