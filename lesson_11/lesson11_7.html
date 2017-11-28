@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Lesson11_7</title>
+		<!-- <link rel="stylesheet" href="style.css"> -->
+		<style>
+			#menu {
+				width: 700px;
+				border: 1px solid blue;
+				margin: 0 auto;
+				background: #00BFFF;
+			} 
+			#menu ul {
+				margin: 0;
+				padding: 0; 
+				display: flex;
+				flex-direction: row-reverse;
+				justify-content: flex-start;
+				align-items: center;
+			}
+			#menu li {
+				list-style-type: none;
+				text-align: center;
+				border: 1px solid blue;
+			}
+			#menu a:link, #menu a:visited {
+				text-decoration: none;
+				padding: 10px;
+				color: white;
+				display: block;		
+			} 
+			#menu li:hover {
+				background: white;
+			}
+			#menu li:hover a {
+				color: #00BFFF;
+			}
+		</style>
+	</head>
+	<body>
+	<div id="menu">
+			<ul>
+				<li><a href="#">Главная</a></li>
+				<li><a href="#">О компании</a></li>
+				<li><a href="#"> Информация <br> о том, <br> как к нам <br> доехать</a></li> 
+				<li><a href="#">О нас</a></li>
+			</ul>
+		</div>
+	</body>
+</html>
