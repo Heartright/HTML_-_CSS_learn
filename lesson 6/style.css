@@ -1,0 +1,6 @@
+#test a:link, #test a:visited {
+	color: red;
+}
+#test a:hover {
+	color: blue;
+}

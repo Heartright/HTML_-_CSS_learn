@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Lesson6_1</title>
+		<!-- <link rel="stylesheet" href="style.css"> -->
+		<style>
+			#test a:link, #test a:visited {
+				color: red;
+				text-decoration: none;
+			}
+			#test a:hover {
+				color: blue;
+			}
+		</style>
+	</head>
+	<body>
+	<div id="test">
+	<a href="#">Ссылка 1</a>
+	<a href="#">Ссылка 2</a>
+	<a href="#">Ссылка 3</a>
+</div>
+	</body>
+</html>
+_______________________________________________
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Lesson6_2</title>
+		<!-- <link rel="stylesheet" href="style.css"> -->
+		<style>
+			a:link.www, a:visited.www {
+				color: blue;
+			}
+			a:hover.www {
+				text-decoration: none;
+			}
+		</style>
+	</head>
+	<body>
+	<a class="www" href="#">Ссылка 1</a>
+	<a class="www" href="#">Ссылка 2</a>
+	<a class="www" href="#">Ссылка 3</a>
+	</body>
+</html>
+_______________________________________________
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Lesson6_3</title>
+		<!-- <link rel="stylesheet" href="style.css"> -->
+		<style>
+			#test a:link.www, a:visited.www {
+				color: blue;
+			}
+			#test a:hover.www {
+				color: red;
+				text-decoration: none;
+			}
+		</style>
+	</head>
+	<body>
+	<div id="test">
+		<a class="www" href="#">Ссылка 1</a>
+		<a class="www" href="#">Ссылка 2</a>
+		<a href="#">Ссылка 3</a>
+	</div>
+	</body>
+</html>
+_______________________________________________
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Lesson6_4</title>
+		<!-- <link rel="stylesheet" href="style.css"> -->
+		<style>
+			.eee a:link.www, a:visited.www {
+				color: blue;
+				text-decoration: overline;
+			}
+			.eee a:hover.www {
+				color: yellow;
+				text-decoration: none;
+			}
+		</style>
+	</head>
+	<body>
+	<div class="eee">
+		<a class="www" href="#">Ссылка 1</a>
+		<a class="www" href="#">Ссылка 2</a>
+		<a href="#">Ссылка 3</a>
+	</div>
+	</body>
+</html>
+_______________________________________________
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Lesson6_5</title>
+		<!-- <link rel="stylesheet" href="style.css"> -->
+		<style>
+			#under_l {
+				text-decoration: underline;
+			}
+			#line_t {
+				text-decoration: line-through;
+			}
+			#over_l {
+				text-decoration: overline;
+			}
+		</style>
+	</head>
+	<body>
+		<p id="under_l">Привет, мир!</p>
+		<p id="line_t">Привет, мир!</p>
+		<p id="over_l">Привет, мир!</p>
+	</body>
+</html>
+_______________________________________________
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Lesson6_6</title>
+		<!-- <link rel="stylesheet" href="style.css"> -->
+		<style>
+			div {
+				border-width: 1px;
+				border-style: solid;
+				border-color: red;
+				width: 200px;
+				height: 200px;
+				}
+		</style>
+	</head>
+	<body>
+	<div></div>
+	</body>
+</html>
+_____________________________________________
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Lesson6_7</title>
+		<!-- <link rel="stylesheet" href="style.css"> -->
+		<style>
+			div {
+				border-width: 1px;
+				border-style: dotted;
+				border-color: blue;
+				width: 500px;
+				height: 200px;
+				}
+		</style>
+	</head>
+	<body>
+	<div></div>
+	</body>
+</html>
+_____________________________________________
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Lesson6_8</title>
+		<!-- <link rel="stylesheet" href="style.css"> -->
+		<style>
+			div {
+				border-width: 1px;
+				border-style: dashed;
+				border-color: green;
+				width: 100px;
+				height: 100px;
+				}
+		</style>
+	</head>
+	<body>
+	<div></div>
+	</body>
+</html>
+_____________________________________________
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Lesson6_9</title>
+		<!-- <link rel="stylesheet" href="style.css"> -->
+		<style>
+			div {
+				width: 500px;
+				height: 200px;
+				border-left: 1px solid black;
+				border-right: 1px solid green;
+				border-top: 1px solid blue;
+				border-bottom: 1px solid red;
+				border-radius: 20px 20px 20px 20px;
+				 
+			}
+		</style>
+	</head>
+	<body>
+		<div></div>
+	</body>
+</html>
+_____________________________________________
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Lesson6_10</title>
+		<!-- <link rel="stylesheet" href="style.css"> -->
+		<style>
+			div {
+				width: 300px;
+				height: 300px;
+				border: 1px dashed green;
+				border-radius: 10px 30px 10px 30px;
+				 
+			}
+		</style>
+	</head>
+	<body>
+		<div></div>
+	</body>
+</html>
+_____________________________________________
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Lesson6_11</title>
+		<!-- <link rel="stylesheet" href="style.css"> -->
+		<style>
+			div {
+				width: 300px;
+				height: 300px;
+				border: 1px dotted green;
+				border-radius: 10px 30px 50px 70px;
+				 
+			}
+		</style>
+	</head>
+	<body>
+		<div></div>
+	</body>
+</html>
+_____________________________________________
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Lesson6_12</title>
+		<!-- <link rel="stylesheet" href="style.css"> -->
+		<style>
+			div {
+				width: 100px;
+				height: 100px;
+				border: 1px solid red;
+				border-radius: 50px;
+			}
+		</style>
+	</head>
+	<body>
+		<div></div>
+	</body>
+</html>
+_____________________________________________
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Lesson6_13</title>
+		<!-- <link rel="stylesheet" href="style.css"> -->
+		<style>
+			a:link.ref_1, a:visited.ref_1 {
+				color: blue;
+				text-decoration: none;
+			}
+			a:hover.ref_1 {
+				color: green;
+				text-decoration: underline;
+			}
+			
+			a:link.ref_2, a:visited.ref_2 {
+				color: red;
+				text-decoration: underline;
+			}
+			a:hover.ref_2 {
+				color: blue;
+				text-decoration: line-through;
+			}
+
+			a:link.ref_3, a:visited.ref_3 {
+				color: black;
+				text-decoration: none;
+			}
+			a:hover.ref_3 {
+				color: red;
+				text-decoration: overline;
+			}
+		</style>
+	</head>
+	<body>
+		<p><a class="ref_1" href="#">ссылка</a></p>
+		<p><a class="ref_2" href="#">ссылка</a></p>
+		<p><a class="ref_3" href="#">ссылка</a></p>
+	</body>
+</html>
