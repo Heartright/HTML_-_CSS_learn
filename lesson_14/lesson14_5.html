@@ -5,13 +5,14 @@
 		<title>Lesson14_5</title>
 		<!-- <link rel="stylesheet" href="style.css"> -->
 		<style>
-			body, ul, h1, h2 {
+			body, ul, h1, h2, li, br, h3{
 				margin: 0;
 				padding: 0;
 				} 
 			#wrap {
-				width: 1100px;	
-				margin: 0 auto;  	
+				margin: 0px auto; 
+padding: 0; 
+width: 1100px; 	
 			}
 			#color_l {
 				height: 50px; 
@@ -63,6 +64,42 @@
 				#menu li {
 					list-style-type: none;
 				}
+			.right {
+				float: right;
+			}
+			.left {
+				float: left;
+				padding-left: 30px;
+			}
+			#bot_menu { 
+				height: 35px; 
+				width: 100%; 
+				background-color: #E6E6E6; 
+			} 
+			#bot_menu ul {
+				display: flex;
+				flex-direction: row;
+				list-style: none;
+			}
+			#bot_menu a { 
+				line-height: 35px; 
+				color: #666666; 
+				padding: 0 20px;
+			} 
+			#bot_menu a:hover { 
+				text-decoration: none; 
+			} 
+			#bot_menu p { 
+				float: right; 
+				color: #666666; 
+				line-height: 35px; 
+				margin: 0; 
+				padding-left: 0;
+			} 
+			#bot_menu p a { 
+				padding: 0;
+			} 
+
 			aside {
 				width: 270px;
 				padding: 10px 0;
@@ -70,8 +107,9 @@
 				#right, #left {
 					float: right;
 				}
-				#left {
-					padding-left: 10px;
+				#left p, #right p {
+					padding-left: 15px;
+					margin-right: 0px;
 				}
 				aside h3 {
 					font-size: 17px;
@@ -80,8 +118,7 @@
 				aside p {
 					font-size: 13px;
 					text-align: justify;
-					margin: 0 10px 10px;
-					padding-left: 10px;
+					margin: 0 5px 10px;
 				}
 				aside img {
 					margin-top: 10px;	
@@ -90,7 +127,6 @@
 				width: 560px;
 				padding: 30px 0;
 				text-align: justify;
-				
 			}
 				main h1 {
 					font-size: 24px;
@@ -102,46 +138,48 @@
 					font-size: 19px;
 					margin-top: 20px;
 				}
-			footer {
-				min-width: 1100px; 
+			footer { 
 				width: 100%; 
-				font-size: 13px;
-				text-align: center;
-				background-color: black;
-				padding-top: 30px;
-				padding-bottom: 5px;
-				
-			}
-					.f_group {	
-					width: 1100px;
-					margin: 0 auto;
-				}
-					.block{
-						min-height: 180px; 
-						width: 245px; 
-						background-color: white; 
-						display: inline-block; 
-						padding: 10px; 
-						margin-right: 10px; 
-						background-color: white; 
-						text-align: center; 
-				}
-					.last {
-						margin-right: 0;
-					}
-					.f_group h2 { 
-						margin: 0;					
-				} 
-					.f_group  p { 
-						margin: 0; 
-				} 
-					.copyright {
-						text-align: center;
-						color: white; 
-						margin-top: 30px; 
-					}
-					.clearfix {
-						clear: both;
+				height: 240px; 
+				background-color: #EEEEEE; 
+				padding-top: 5px;
+				margin-top: 10px;
+			} 
+			footer { 
+				width: 100%; 
+				height: 190px; 
+				background-color: #EEEEEE; 
+				padding-top: 30px; 
+			} 
+			.foot_ref { 
+				width: 200px; 
+				float: left; 
+				margin-right: 20px;
+			} 
+			.foot_ref p {  
+				margin: 10px 0; 
+			} 
+			.foot_ref a{ 
+				font-size: 15px; 
+				color: #666666; 
+				text-decoration: none; 
+			} 
+			.foot_ref  a:hover { 
+				text-decoration: underline; 
+			} 
+			.foot_info { 
+				text-align: center; 
+			} 
+			.foot_info h3 { 
+				color: #666666; 
+			} 
+			.foot_info p { 
+				font-size: 13px; 
+				margin: 0; 
+				color: #666666; 
+			} 
+		.clearfix {
+			clear: both;
 				}
 		</style>
 	</head>
@@ -166,9 +204,24 @@
 					<li><a href="#">Информация</a></li>
 					<li><a href="#">Как доехать</a></li>
 				</ul>
-				<div id="wrap_top">
+				</div>
 			</nav>
-		</div>
+			<nav id="bot_menu">
+				<div id="wrap">
+				<div class="left">
+				<ul> 
+					<li><a href="">Вопросы</a></li> 
+					<li><a href="">Метки</a></li> 
+					<li><a href="">Знаки</a></li> 
+					<li><a href="">Информация</a></li> 
+					<li><a href="">Без ответа</a></li> 
+					<li><a href="">Задать вопрос</a></li> 
+				</ul>
+				</div>
+				<div class="right">
+				<p>Вы зашли как <b>User</b> | <a href="">Выйти</a></p>
+				</div>
+			</nav>
 		</header>
 		<div id="wrap">
 			<aside id="right">
@@ -187,16 +240,16 @@
 					</p>
 					<p>Мед используют при лечении анемии, так как в нем содержится много полезных веществ, в особенности железо и медь, а нормальный уровень гемоглобина в крови зависит от необходимого количества именно этих элементов в организме.
 					</p>
-					<p><img src="pchela3.jpg">
+					<p><img src="pchela3.jpg" width="100%">
 					</p>
-					<p><img src="pchela4.jpg">
+					<p><img src="pchela4.jpg" width="100%">
 					</p>
 				<h3>Вредные свойства меда</h3>
 					<p>При всем наборе полезных свойств, мед обладает и противопоказаниями. В первую очередь это касается людей с аллергией на мед и его составляющие. Иногда бывает так, что аллергию вызывает только конкретный сорт меда. Если вы попали в эту категорию аллергиков, то вам не обязательно полностью отказываться от меда, а просто методом подбора можно выбрать тот сорт, на который аллергии не будет.
 					</p>
 					<p>Важно помнить, что нагретый свыше 40 градусов мёд теряет все свой полезные свойства, а нагретый свыше 60 градусов еще и выделяет токсичный оксиметилфурфурол, который способен причинить серьезный вред организму.
 					</p>
-					<p><img src="pchela5.jpg">
+					<p><img src="pchela5.jpg" width="100%">
 					</p>
 			</aside>
 			<aside id="left">
@@ -242,76 +295,23 @@
 			</div>
 			<div class="clearfix"></div>
 		</div>
-		<footer>
-			<div class="f_group">
-				<div class="block">
-					<h2>Пчелы - это полезно</h2>
-					<p>Etiam pulvinar velit nec libero iaculis, vitae 
-					</p>
-					<p>consectetur elit pellentesque.
-					</p>
-					<p>Curabitur ornare tincidunt nisi id cursus.
-					</p>
-					<hr>
-					<p>Praesent ullamcorper est ac lorem aliquet, sed 
-					</p>
-					<p>tempus lacus iaculis. Pellentesque a odio 
-					</p>
-					<p>pharetra, sagittis enim sit amet, euismod leo.
-					</p>
-				</div>
-				<div class="block">
-					<h2>Пчелы - это интересно</h2>
-					<p>Etiam pulvinar velit nec libero iaculis, vitae 
-					</p>
-					<p>consectetur elit pellentesque.
-					</p>
-					<p>Curabitur ornare tincidunt nisi id cursus.
-					</p>
-					<hr>
-					<p>Praesent ullamcorper est ac lorem aliquet, sed 
-					</p>
-					<p>tempus lacus iaculis. Pellentesque a odio 
-					</p>
-					<p>pharetra, sagittis enim sit amet, euismod leo.
-					</p>
-				</div>
-				<div class="block">
-					<h2>Пчелы - это мёд</h2>
-					<p>Etiam pulvinar velit nec libero iaculis, vitae 
-					</p>
-					<p>consectetur elit pellentesque.
-					</p>
-					<p>Curabitur ornare tincidunt nisi id cursus.
-					</p>
-					<hr>
-					<p>Praesent ullamcorper est ac lorem aliquet, sed 
-					</p>
-					<p>tempus lacus iaculis. Pellentesque a odio 
-					</p>
-					<p>pharetra, sagittis enim sit amet, euismod leo.
-					</p>
-				</div>
-				<div class="block last">
-					<h2>Пчелы - это круто</h2>
-						<p>Etiam pulvinar velit nec libero iaculis, vitae 
-						</p>
-						<p>consectetur elit pellentesque.
-						</p>
-						<p>Curabitur ornare tincidunt nisi id cursus.
-						</p>
-					<hr>
-						<p>Praesent ullamcorper est ac lorem aliquet, sed 
-						</p>
-						<p>tempus lacus iaculis. Pellentesque a odio 
-						</p>
-						<p>pharetra, sagittis enim sit amet, euismod leo.
-						</p>
-				</div>	
-			</div>
-			<div class="copyright">
-				www.pchela.com © 2010-2015. Мёд.
-			</div>
-		</footer>
+		<footer> 
+			<div id="wrap"> 
+			<div class="foot_ref"> 
+				<p><a href="">Договор пользования сайтом</a></p> 
+				<p><a href="">Правила пользования сайтом</a></p> 
+				<p><a href="">Использование материалов пчёлы.net разрешено только со ссылкой на сайт</a></p> 
+				<p><a href="">Задать вопрос создателям и вдохновителям сайта</a></p> 
+			</div> 
+		<div class="foot_info"> 
+			<h3>Пчелы - это полезно</h3> 
+			<p>Etiam pulvinar velit nec libero iaculis, vitae consectetur elit pellentesque. <br> 
+				Curabitur ornare tincidunt nisi id cursus. <br> 
+				Praesent ullamcorper est ac lorem aliquet, sed tempus lacus iaculis. Pellentesque a odio pharetra, sagittis enim sit amet, euismod leo.</p> 
+			<hr> 
+			<p>Nulla facilisi. Nunc aliquet, erat sed ullamcorper malesuada, sapien magna tempor augue, at malesuada felis enim at quam. Curabitur ornare tincidunt nisi id cursus. Nunc finibus non massa in vestibulum. Etiam euismod metus ut euismod sagittis. Donec tincidunt neque a dolor posuere egestas.</p> 
+		</div> 
+	</div> 
+	</footer> 
 	</body>
 </html>
