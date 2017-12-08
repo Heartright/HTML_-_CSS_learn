@@ -1,184 +1,218 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>Lesson14_6</title>
-		<!-- <link rel="stylesheet" href="style.css"> -->
-		<style>
-			body, p, h1, h2, ol {
-				margin: 0;
-				padding: 0;
-				} 
-			#center {
-				margin: 0 auto; 
-				width: 840px; 	
-			}
-			h1, p, h2, footer {
-			font-family: 'Arial';
-			text-align: center;
-			}
-			header { 
-				min-width: 840px;
-				background-color: green;
-				color: white;
-				padding: 5px;	
-			}
-			header h1 {
-				font-size: 35px;
-				margin-bottom: 7px;
-			}
-			header p {
-				font-size: 21px;
-				margin: 5px;
-			}
-			.srvs {
-				padding-top: 30px;
-				text-align: justify;
-			}
-			h2, li {
-				margin-bottom: 10px;
-			}
-			main {
-				margin-bottom: 30px;
-			}
-			main h2 {
-				font-size: 27px;
-			}
-			main ol {
-				color: red;
-				font-weight: bold;
-				font-family: 'Arial';
-				list-style-position: inside;
-			}
-			main span {
-				color: black;
-				font-weight: normal;
-			}
-			.cont{
-				background-color: red;
-				width: 100%;
-				color: white;
-				text-align: center;
-				padding-bottom: 20px;
-				margin-top: 30px;
-			}
-			.cont h2 {
-				padding-top: 10px;
-			}
-			.info {
-				margin-top: 30px;
-			}
-			.info p {
-				text-align: justify;
-				margin-bottom: 10px;
-			}
-			.clients {
-				padding: 20px;
-				background-color: #ff8040;
-			}
-			.clients h2 {
-				font-size: 27px;
-				color: white;
-			}
-			.clients img {
-				width: 24.5%;
-				float: left;
-				margin-right: 0.6666%;
-				outline: 1px solid black;
-			}
-			.clients .last {
-				margin-right: 0;
-			}
-			.clients p {
-				margin-bottom: 0.6666%;
-			}			
-			.clearfix {
-				clear: both;
-			}
-			footer {
-				padding: 200px 0 5px;
-				background-color: #912f00;
-				margin-bottom: 0;
-				font-size: 13px;
-				color: white;
-			}
-		</style>
-	</head>
-	<body>
-		<header class="min">
-			<div id="center">
-				<h1>Любые виды ремонтных работ</h1>
-				<p>Выезд специалиста, замер и смета работ бесплатно</p>
-				<p>Бесплатный дизайн проект</p>
-				<p>Гарантия 3 года</p>
-			</div> 
-		</header>
-		<main>
-			<div id="center">
-				<div class="srvs">
-			<h2>Наши услуги</h2>
-			<ol>
-			<li>
-			<span>
+
+<head>
+    <meta charset="utf-8">
+    <title>Lesson14_6</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        body,
+        p,
+        h1,
+        h2,
+        ol {
+            margin: 0;
+            padding: 0;
+        }
+
+        #center {
+            margin: 0 auto;
+            width: 840px;
+        }
+
+        h1,
+        p,
+        h2,
+        footer {
+            font-family: 'Arial';
+            text-align: center;
+        }
+
+        header {
+            min-width: 840px;
+            background-color: green;
+            color: white;
+            padding: 5px;
+        }
+
+        header h1 {
+            font-size: 35px;
+            margin-bottom: 7px;
+        }
+
+        header p {
+            font-size: 21px;
+            margin: 5px;
+        }
+
+        .srvs {
+            padding-top: 30px;
+            text-align: justify;
+        }
+
+        h2,
+        li {
+            margin-bottom: 10px;
+        }
+
+        main {
+            margin-bottom: 30px;
+        }
+
+        main h2 {
+            font-size: 27px;
+        }
+
+        main ol {
+            color: red;
+            font-weight: bold;
+            font-family: 'Arial';
+            list-style-position: inside;
+        }
+
+        main span {
+            color: black;
+            font-weight: normal;
+        }
+
+        .cont {
+            background-color: red;
+            width: 100%;
+            color: white;
+            text-align: center;
+            padding-bottom: 20px;
+            margin-top: 30px;
+        }
+
+        .cont h2 {
+            padding-top: 10px;
+        }
+
+        .info {
+            margin-top: 30px;
+        }
+
+        .info p {
+            text-align: justify;
+            margin-bottom: 10px;
+        }
+
+        .clients {
+            padding: 20px;
+            background-color: #ff8040;
+        }
+
+        .clients h2 {
+            font-size: 27px;
+            color: white;
+        }
+
+        .clients img {
+            width: 24.5%;
+            float: left;
+            margin-right: 0.6666%;
+            outline: 1px solid black;
+        }
+
+        .clients .last {
+            margin-right: 0;
+        }
+
+        .clients p {
+            margin-bottom: 0.6666%;
+        }
+
+        .clearfix {
+            clear: both;
+        }
+
+        footer {
+            padding: 200px 0 5px;
+            background-color: #912f00;
+            margin-bottom: 0;
+            font-size: 13px;
+            color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header class="min">
+        <div id="center">
+            <h1>Любые виды ремонтных работ</h1>
+            <p>Выезд специалиста, замер и смета работ бесплатно</p>
+            <p>Бесплатный дизайн проект</p>
+            <p>Гарантия 3 года</p>
+        </div>
+    </header>
+    <main>
+        <div id="center">
+            <div class="srvs">
+                <h2>Наши услуги</h2>
+                <ol>
+                    <li>
+                        <span>
 				Pellentesque pellentesque sem ac justo tristique pellentesque. Vestibulum semper pulvinar rutrum. Maecenas odio urna, porta sed lectus eget, fringilla posuere odio. Maecenas pulvinar sed massa vitae tincidunt.
 			</span>
-			</li>
-			<li>
-			<span>
+                    </li>
+                    <li>
+                        <span>
 					Praesent ullamcorper est ac lorem aliquet, sed tempus lacus iaculis. Pellentesque a odio pharetra, sagittis enim sit amet, euismod leo. Nullam egestas, nisi eget blandit dignissim, augue dui accumsan est, at tincidunt ipsum metus quis justo. Aenean sed mauris ornare, faucibus tortor in, iaculis magna. Duis eros lectus, auctor eu mi sit amet, ornare scelerisque elit.
 			</span>
-			</li>
-			<li>
-			<span>
+                    </li>
+                    <li>
+                        <span>
 				Integer a sollicitudin quam. Sed laoreet finibus velit ut rhoncus. Nunc euismod neque at ligula venenatis vestibulum. Nulla facilisi. Nunc aliquet, erat sed ullamcorper malesuada, sapien magna tempor augue, at malesuada felis enim at quam. Curabitur ornare tincidunt nisi id cursus.
 			</span>
-			</li>
-			<li>
-			<span>
+                    </li>
+                    <li>
+                        <span>
 				Nunc finibus non massa in vestibulum. Etiam euismod metus ut euismod sagittis. Donec tincidunt neque a dolor posuere egestas. Proin sed dolor dui. In urna tellus, pretium in eleifend eget, pellentesque et enim. Etiam pulvinar velit nec libero iaculis, vitae consectetur elit pellentesque.
 			</span>
-			</li>
-		</ol>
-			</div>
-		</div>
-			<div class="cont">
-				<h2>Наши контакты</h2>
-				<p>Телефоны: +375 29 817 68 92 МТС, +375 31 335 29 38 Velcom</p>
-			</div>
-			<div id="center">
-			<div class="info">
-		<h2> Наша компания </h2>
-			<p>Pellentesque pellentesque sem ac justo tristique pellentesque. Vestibulum semper pulvinar rutrum. Maecenas odio urna, porta sed lectus eget, fringilla posuere odio. Maecenas pulvinar sed massa vitae tincidunt. Praesent ullamcorper est ac lorem aliquet, sed tempus lacus iaculis. Pellentesque a odio pharetra, sagittis enim sit amet, euismod leo. Nullam egestas, nisi eget blandit dignissim, augue dui accumsan est, at tincidunt ipsum metus quis justo. Aenean sed mauris ornare, faucibus tortor in, iaculis magna. Duis eros lectus, auctor eu mi sit amet, ornare scelerisque elit.
-			</p>
-			<p>
-			Integer a sollicitudin quam. Sed laoreet finibus velit ut rhoncus. Nunc euismod neque at ligula venenatis vestibulum. Nulla facilisi. Nunc aliquet, erat sed ullamcorper malesuada, sapien magna tempor augue, at malesuada felis enim at quam. Curabitur ornare tincidunt nisi id cursus. Nunc finibus non massa in vestibulum. Etiam euismod metus ut euismod sagittis. Donec tincidunt neque a dolor posuere egestas. Proin sed dolor dui. In urna tellus, pretium in eleifend eget, pellentesque et enim. Etiam pulvinar velit nec libero iaculis, vitae consectetur elit pellentesque.
-			</p>
-		 </div>
-		</main>
-			<div class="clients">
-				<div id="center">
-					<h2>Наши клиенты</h2>
-				<p> 
-					<img src="img1.jpg"> 
-					<img src="img2.jpg"> 
-					<img src="img3.jpg"> 
-					<img src="img4.jpg" class="last"> 
-				</p> 
-				<div class="clearfix"></div> 
-				<p> 
-				</p> 
-				<p> 
-					<img src="img5.jpg"> 
-					<img src="img6.jpg"> 
-					<img src="img7.jpg"> 
-					<img src="img8.jpg" class="last"> 
-				</p> 
-				<div class="clearfix"></div> 
-				<p></p> 
-				</div>
-			</div>
-		<footer>
-			Строительная компания "Рога и копыта" © 2015. Все права более чем защищены.
-		</footer> 
-	</body>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div class="cont">
+            <h2>Наши контакты</h2>
+            <p>Телефоны: +375 29 817 68 92 МТС, +375 31 335 29 38 Velcom</p>
+        </div>
+        <div id="center">
+            <div class="info">
+                <h2> Наша компания </h2>
+                <p>Pellentesque pellentesque sem ac justo tristique pellentesque. Vestibulum semper pulvinar rutrum. Maecenas odio urna, porta sed lectus eget, fringilla posuere odio. Maecenas pulvinar sed massa vitae tincidunt. Praesent ullamcorper est ac lorem aliquet, sed tempus lacus iaculis. Pellentesque a odio pharetra, sagittis enim sit amet, euismod leo. Nullam egestas, nisi eget blandit dignissim, augue dui accumsan est, at tincidunt ipsum metus quis justo. Aenean sed mauris ornare, faucibus tortor in, iaculis magna. Duis eros lectus, auctor eu mi sit amet, ornare scelerisque elit.
+                </p>
+                <p>
+                    Integer a sollicitudin quam. Sed laoreet finibus velit ut rhoncus. Nunc euismod neque at ligula venenatis vestibulum. Nulla facilisi. Nunc aliquet, erat sed ullamcorper malesuada, sapien magna tempor augue, at malesuada felis enim at quam. Curabitur ornare tincidunt nisi id cursus. Nunc finibus non massa in vestibulum. Etiam euismod metus ut euismod sagittis. Donec tincidunt neque a dolor posuere egestas. Proin sed dolor dui. In urna tellus, pretium in eleifend eget, pellentesque et enim. Etiam pulvinar velit nec libero iaculis, vitae consectetur elit pellentesque.
+                </p>
+            </div>
+    </main>
+    <div class="clients">
+        <div id="center">
+            <h2>Наши клиенты</h2>
+            <p>
+                <img src="img1.jpg">
+                <img src="img2.jpg">
+                <img src="img3.jpg">
+                <img src="img4.jpg" class="last">
+            </p>
+            <div class="clearfix"></div>
+            <p>
+            </p>
+            <p>
+                <img src="img5.jpg">
+                <img src="img6.jpg">
+                <img src="img7.jpg">
+                <img src="img8.jpg" class="last">
+            </p>
+            <div class="clearfix"></div>
+            <p></p>
+        </div>
+    </div>
+    <footer>
+        Строительная компания "Рога и копыта" © 2015. Все права более чем защищены.
+    </footer>
+</body>
+
 </html>
