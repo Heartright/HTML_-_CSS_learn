@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Lesson15_1</title>
+		<title>Lesson15_2</title>
 		<!-- <link rel="stylesheet" href="style.css"> -->
 		<style>			
 			* {
@@ -10,8 +10,7 @@
 				padding: 0;
 			}
 			body {
-				background-color: #B17E4F;
-				font-family: "Trebuchet MS";
+				background-color: #EBEBEB;
 			}
 			ul, a {
 				text-decoration: none;
@@ -19,63 +18,64 @@
 			}
 			.wrapper {
 				width: 960px;
-				margin: 0 auto;
+				margin: 40px auto;
+				background: #FFFFFF;
+				
 			}
 			.tagline {
 				font-size: 44px;
-				font-weight: bold;
 				float: left;
-				color: white;
-				padding: 60px 0 11px 30px;
+				padding-left: 30px;
+				color: black;
+				font: normal 54px/120px Georgia;
+				letter-spacing: -3px;
 			}
 			address {
 				float: right;
-				font-size: 16px;
-				color: #CDB4A1;
-				padding-top: 80px;
 				padding-right: 30px;
-				font-style: normal;
+				font-size: 18px;
+				color: #ccc7c7;
+				font: 20px/120px Georgia, Times, serif;
+				letter-spacing: -1px;
 			}
-			.content {
-				background-color: white;
-				float: left;
-				margin-bottom: 40px;
-			}
+			<!-- .content { -->
+				<!-- background-color: white; -->
+				<!-- float: left; -->
+				<!-- margin: 40px; -->
+			<!-- } -->
 			.header_menu {
-				padding: 16px;
-				
+				padding-bottom: 60px;
+				font-family: "Trebuchet MS";
 			}
 			.header_menu ul {
 				display: flex;
 				flex-direction: row;
-				background-color: black;
-				font-size: 13px;
+				background-color: orange;
+				
 			}
 			.header_menu a {
-				padding: 0 20px;;
 				display: block;
-				color: white;
-				line-height: 55px;
+				color: #EBEBEB;
+				line-height: 84px;
+				font-weight: bold;
 			}
-			.header_menu a:hover, a.active {
-				background-color: #1B3039;
+			.header_menu a:hover {
+				color: #f4f2f2;
 			}
 			.header_menu li {
 				width: 20%;
 				text-align: center;
+				padding: 0 10px;
 			}
-			img {
-				height: 100%;
-				padding-left: 16px;
-				padding-right: 16px;
+			img_1 {
+				height: 400px;
 			}
-			
 			main {
 				width: 570px;
 				padding-left: 31px;
 				padding-right: 30px;
 				padding-bottom: 10px;
-				float: left;
+				float: right;
 			}
 			main h1 > a {
 				font-size: 38px;
@@ -94,7 +94,7 @@
 			}
 			aside {
 				width: 300px;
-				float: right;
+				float: left;
 				margin-right: 15px;
 			}
 			.block {
@@ -142,27 +142,29 @@
 	</head>
 	<body>
 		<div class="wrapper">
-			<div class="info">
-		<a href="#" class="tagline">down the stream</a>
+			<div class="content">
+				<div class="info">
+		<a href="#" class="tagline">hovering</a>
 			<address>template designed by webtemplateocean.com
 			</address>
 			</div>
-		<div class="clearfix"></div>
-			<div class="content">
+			<div class="clearfix"></div>
 		<header>
+		
 		<nav class="header_menu">
 			<ul>
-				<li><a href="#" class="active">HOME</a></li>
-				<li><a href="#">ABOUT</a></li>
-				<li><a href="#">GALLERY</a></li>
-				<li><a href="#">HELP</a></li>
-				<li><a href="#">CONTACT</a></li>
+				<li><a href="#">home</a></li>
+				<li><a href="#">about</a></li>
+				<li><a href="#">products</a></li>
+				<li><a href="#">gallery</a></li>
+				<li><a href="#">help</a></li>
+				<li><a href="#">contact</a></li>
 			</ul>
 		</nav>
+		<img src="img_1.jpg">
 		</header>
-		<img src="img.jpg">
 		<main>
-		<h1><a href="#">terms of use</a></h1>
+		<h1><a href="#">Terms of Use</a></h1>
 		<p>
 		Posted in <a  href="#" class="ref">Class apent</a> | <time datetime="2019-09-20">Sep 20, 2019</time> | <a href="#" class="ref">4 comments</a>
 		</p>
