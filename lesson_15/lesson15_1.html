@@ -15,6 +15,7 @@
 			}
 			ul, a {
 				text-decoration: none;
+				list-style-type: none;
 			}
 			.wrapper {
 				width: 960px;
@@ -27,29 +28,111 @@
 				color: white;
 				padding: 60px 0 11px 30px;
 			}
-			.ref {
+			address {
 				float: right;
 				font-size: 16px;
 				color: #CDB4A1;
 				padding-top: 80px;
 				padding-right: 40px;
+				font-style: normal;
 			}
-			main {
+			.content {
 				background-color: white;
+				float: left;
 			}
 			.header_menu {
+				padding: 15px;	
+			}
+			.header_menu ul {
+				display: flex;
+				flex-direction: row;
 				background-color: black;
+				font-size: 13px;
 			}
-			.main_menu ul {
+			.header_menu a {
+				padding: 0 20px;;
+				display: block;
+				color: white;
+				line-height: 55px;
 			}
+			.header_menu a:hover, a.active {
+				background-color: #1B3039;
+			}
+			.header_menu li {
+				width: 20%;
+				text-align: center;
+			}
+			img {
+				height: 100%;
+				padding-left: 15px;
+				padding-right: 15px;
+			}
+			
+			main {
+				width: 560px;
+				padding-left: 30px;
+				padding-right: 30px;
+				float: left;
+			}
+			main h1 > a {
+				font-size: 38px;
+				color: #9F6841
+			}
+			main p {
+				padding-bottom: 30px;
+				line-height: 26px;
+				font-size: 13px;
+			} 
+			a.ref  {
+				color: #96AE3E;
+			} 
+			.clearfix {
+				clear:both;
+			}
+			aside {
+				float: right;
+			}
+			.block {
+				background-color: #EFEDE5;
+				padding: 8px;
+				margin-right: 16px;
+				margin-top: 23px;
+				line-height: 40px;
+				width: 290px;
+				font-size: 13px;
+			}
+			.block h2 {
+				color: white;
+				background-color: #5D9EBD;
+				padding-left: 15px;
+				margin-left: 15px;
+				border: 1px solid #5D9EBD;
+				font-size: 19px;
+				
+			}
+			.block ul {
+				padding-left: 10px;
+			}
+			.block a {
+				padding: 20px;
+				font-size: 13px;
+				color: #96AE3E;
+			}
+			.block p {
+			}
+			
 		</style>
 	</head>
 	<body>
-		<header>
 		<div class="wrapper">
+			<div class="info">
 		<a href="#" class="tagline">down the stream</a>
-		<p class="ref">template designed by webtemplateocean.com
-		</p>
+			<address>template designed by webtemplateocean.com
+			</address>
+			</div>
+		<div class="clearfix"></div>
+			<div class="content">
+		<header>
 		<nav class="header_menu">
 			<ul>
 				<li><a href="#" class="active">HOME</a></li>
@@ -60,12 +143,49 @@
 			</ul>
 		</nav>
 		</header>
-	</main>
-	</div>
+		<img src="img.jpg">
+		<main>
+		<h1><a href="#">terms of use</a></h1>
+		<p>
+		Posted in <a  href="#" class="ref">Class apent</a> | <time datetime="2019-09-20">Sep 20, 2019</time> | <a href="#" class="ref">4 comments</a>
+		</p>
+		<p>Lorem ipsum dolor sit amet, consectetur.<a href="#" class="ref"> Creative Commons Attribution</a> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime doloremque accusantium eligendi et adipisci omnis quod ipsa, eum fugit tempore.
+		</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad debitis nihil molestiae maxime dolor at, distinctio tempora recusandae non vel nemo numquam similique fugiat harum neque autem cupiditate accusamus laboriosam perspiciatis. Officiis consequuntur sunt rerum nostrum odit, id consectetur, ratione.
+		</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, explicabo?<a href="#" class="ref"> PublicDomainPictures.net</a>. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab tempore, facilis aliquid reiciendis voluptatum possimus ea mollitia facere magnam quasi perspiciatis quas, eveniet iste dolores tempora culpa inventore placeat. Sequi, totam doloremque porro odit! Illo ratione consectetur aliquam dolorem esse!...<a href="#" class="ref"> more</a>
+		</p>
+		<h1><a href="#">lorem ipsum dolor sit amet</a></h1>
+		<p>
+		Posted in <a  href="#" class="ref">Class apent</a> | <time datetime="2019-09-20">Sep 19, 2019</time> | <a href="#" class="ref">2 comments</a>
+		</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec dui quis urna sollicitudin sodales. Fusce laoreet, ligula et rhoncus volutpat, felis magna varius tortor, ac molestie diam lorem in lectus. Aliquam venenatis mollis est, a porttitor ipsum interdum nec. Vestibulum sed risus ac nulla viverra pharetra.
+		</p>
+		<p>Quisque congue lacus sed odio fermentum tincidunt. Proin vitae nulla velit. Cras consectetur commodo scelerisque. Curabitur leo nisl, blandit at tempus et, interdum at risus. Sed dui augue, pellentesque ac pulvinar id, malesuada eget diam. Integer elementum sem eget tortor faucibus id pellentesque lorem dignissim...<a href="#" class="ref"> more</a>
+		</p>
+		</main>
+		<aside class="right">
+			<div class="block">
+				<h2>Saepe repellendus</h2>
+					<ul>
+						<li><a href="#">Lorem ipsum dolor.</a></li>
+						<li><a href="#">Saepe repellendus, veniam!</a></li>
+						<li><a href="#">Repellendus laborum, sequi.</a></li>
+						<li><a href="#">Inventore laudantium, eos!</a></li>
+						<li><a href="#">Voluptate, ea, quaerat..</a></li>
+					</ul>
+			</div>
+			<div class="block">
+			<h2>Integer rhoncus</h2>
+			<p>Mauris sollicitudin tincidunt magna vitae semper. Curabitur ut pharetra quam. Integer rhoncus convallis urna vitae mattis. Sed pharetra massa ac metus fermentum 
+			</p>
+			</div>
+		</aside>
+		
 	<footer>
 </footer>
+</div>
 </div> 
 </body> 
-	</body>
 </html>
 	
