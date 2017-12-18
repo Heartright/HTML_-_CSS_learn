@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Lesson17_3</title>
+		<!-- <link rel="stylesheet" href="style.css"> -->
+		<style> 
+		
+		.group {
+			border: 1px solid black;
+			padding: 10px;
+			margin-bottom: 10px;
+		}
+		
+		label {
+			border: 1px solid red;
+		}
+		</style>
+	</head>
+	<body>
+		<form action="" method="GET">
+			<input type="checkbox" id="checkbox_1">
+			<label for="checkbox_1">Это метка для чекбокса: нажмите на меня - чекбокс сменит галочку!</label><br><br>
+			<input type="checkbox" id="checkbox_2" checked>
+			<label for="checkbox_2">Я отмечен по умолчанию!</label><br><br>
+			<input type="checkbox" id="checkbox_3" checked disabled>
+			<label for="checkbox_3">Я disabled!</label><br><br>
+		<div class="group">
+				<p>
+					Это группа радиокнопок - только одна из них может быть отмечена!
+				</p>
+				<input type="radio" name="radio1" id="radio_1">
+				<label for="radio_1" id="radio_1">Это метка для радио</label><br><br>
+				<input type="radio" name="radio1" id="radio_2">
+				<label for id="radio_2">Это метка для радио</label>	<br><br>
+		</div>
+		<input type="submit" value="Отправить на сервер">
+		</form>
+</body> 
+</html>
+	
