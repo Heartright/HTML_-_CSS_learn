@@ -71,3 +71,31 @@ div.hello p.test  {
 .test h2 { 
 	color: red;
 }
+/* 19 */
+.test.hello { 
+	color: red;
+}
+/* 20 */
+p.test.hello { 
+	color: red;
+}
+/* 21 */
+h2.test.hello.eee { 
+	color: red;
+}
+/* 22 */
+p > i { 
+	color: red;
+}
+/* 23 */
+ul > li { 
+	color: red;
+}
+/* 24 */
+p > a, a.text { 
+	color: red;
+}
+/* 25 */
+/* 26 */
+
+ 
