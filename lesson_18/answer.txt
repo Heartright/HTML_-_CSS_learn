@@ -1,0 +1,73 @@
+/* 1 */
+p {
+	color: red;
+}
+/* 2 */
+div p{
+	color: red;
+}
+/* 3 */
+div h2 {
+	color: red;
+}
+/* 4 */
+p, h2 {
+	color: red;
+	
+}
+/* 5 */
+div h2, p {
+	 color: red;
+ }
+/* 6 */
+div h2, div p {
+	 color: red;
+ }
+/* 7 */
+#test {
+	color: red;
+}
+/* 8 */
+#test p {
+	color: red;
+}
+/* 9 */
+#test p, h2 {
+	color: red;
+}
+/* 10 */
+.test {
+	color: red;
+}
+/* 11 */
+p.test { 
+	color: red;
+}
+/* 12 */
+.test, .hello { 
+	color: red;
+}
+/* 13 */
+p.test, h2.hello { 
+	color: red;
+}
+/* 14 */
+p.test, .hello { 
+	color: red;
+}
+/* 15 */
+div#hello p.test { 
+	color: red;
+}
+/* 16 */
+.hello p.test { 
+	color: red;
+}
+/* 17 */
+div.hello p.test  { 
+	color: red;
+}
+/* 18 */
+.test h2 { 
+	color: red;
+}
