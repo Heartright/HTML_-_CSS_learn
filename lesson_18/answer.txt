@@ -96,6 +96,62 @@ p > a, a.text {
 	color: red;
 }
 /* 25 */
+i + b { 
+	color: red;
+}
 /* 26 */
+#test b + i { 
+	color: red;
+}
+/* 27 */
+ul + p { 
+	color: red;
+}
+/* 28 */
+h1 ~ p { 
+	color: red;
+}
+/* 29 */
+#test h2 ~ p { 
+	color: red;
+}
+/* 30 */
+* {
+	color: red;
+}
+/* 31 */
+p * i { 
+	color: red;
+}
+/* 32 */
+[title] { 
+	color: red;
+}
+/* 33 */
+p[title] { 
+	color: red;
+}
 
+/* 34 */
+p[title="привет"] { 
+	color: red;
+}
+
+/* 35 */
+a[href ^="http://"] { 
+	color: red;
+}
+/* 36 */
+a[href $='.html'] { 
+	color: red;
+}
+/* 37 */
+a[title *='привет'] {
+	color: red;
+}
+/* 38 */
+p='top' {
+	color: red;
+}
+/* 39 */
  
