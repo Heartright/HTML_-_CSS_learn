@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Lesson19_6</title>
+		<title>Lesson19_8</title>
 		<!-- <link rel="stylesheet" href="style.css"> -->
 		<style>
 			h1 {
@@ -14,11 +14,12 @@
 				text-align: justify;
 				padding: 10px;
 			}
-			p::before {
-				content: 'Начало: ';
+			.first {
+				counter-reset: count_text;
 			}
-			p::after {
-				content: ' :конец!';
+			p::before {
+				counter-increment: count_text; 
+				content: 'Абзац № ' counter(count_text) ". ";
 			}
 			
 		</style>
@@ -26,7 +27,7 @@
 	<body>
 		<div>
 		<h1>Отрывок из книги</h2>
-			<p>Быть энтузиасткой сделалось ее общественным положением, и иногда, когда ей даже того не хотелось, она, чтобы не обмануть ожиданий людей, знавших ее, делалась энтузиасткой.
+			<p class="first">Быть энтузиасткой сделалось ее общественным положением, и иногда, когда ей даже того не хотелось, она, чтобы не обмануть ожиданий людей, знавших ее, делалась энтузиасткой.
 			</p>
 			<p>В середине разговора про политические действия Анна Павловна разгорячилась.
 			</p>
