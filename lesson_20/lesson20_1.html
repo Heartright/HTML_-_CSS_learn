@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Lesson20_1</title>
+		<link href="http://fonts.googleapis.com/css?family=Arvo:400,700|Cookie" rel="stylesheet">
+		<!-- <link rel="stylesheet" href="style.css"> -->
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			.center {
+				width: 1000px;
+				margin: 0 auto;
+			}
+			body {
+				font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+				font-size: 13px;
+			}
+			a, a:active {
+				text-decoration: none;
+			}
+			header {
+				background: url(header-wrapper-bg.png)	left top;
+				display: flex;
+				height: 187px;
+				align-items: center;
+				justify-content: space-between;
+				text-decoration: none;
+			}
+			header .center {
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				justify-content: space-between;
+			}
+			
+			header a {
+				color: white;
+			}
+			.logo {
+				display: block;
+				width: 220px;
+				height: 110px;
+				background: url(logo-bg.png) no-repeat;
+				text-decoration: none;
+				font-family: 'Cookie', cursive;
+				text-align: center;
+				font-size: 60px;
+				line-height: 110px;
+			}
+			.menu {
+				color: white;
+				font-size: 16px;
+				font-family: 'Arvo', serif;
+				letter-spacing: -1px;
+				padding: 5px;
+			}
+			header ul {
+				display: flex;
+				list-style-type: none;
+			}
+			header li {
+				display: flex;
+				list-style-type: none;
+				margin-right: 40px;
+				line-height: 20px;
+			}
+			nav li:last-child{
+				margin-right: 135px;
+			}
+			nav a {
+				padding: 5px;
+			}
+			.active {
+				background: #881D1D;
+				border-radius: 5px;
+				box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+			}
+			.active a {
+				padding: 5px 15px;
+			}
+			.info {
+				background: url(banner-wrapper-bg.png) repeat;
+				padding: 33px 0;
+			}
+			.banner h2 {
+				text-align: center;
+				font-family: 'Cookie', cursive;
+				color: white;
+				font-size: 35px;
+				background: url(banner-caption-bg.png)no-repeat left bottom;
+				width: 100%;
+				border-radius: 0 0 9px 9px;
+				padding: 17px 0;
+				align-self: flex-end;
+				font-weight: normal;
+			} 
+			.banner {
+				margin: 0 auto;
+				background: url(banner-image.jpg);
+				height: 278px;
+				width: 960px;
+				background-size: cover;
+				display: flex;
+				border-radius: 9px;
+			}
+		</style>
+	</head>
+	<body>
+	<header>
+		<div class="center">
+			 <a href="#" class="logo">Elysa4t</a>
+				<nav class="menu"> 
+					<ul>
+						<li class="active"><a href="">Home</a></li>
+						<li><a href="">Archives</a></li>
+						<li><a href="">Gallery</a></li>
+						<li><a href="">About</a></li>
+						<li><a href="">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+			<section class="info">
+			<div class="center">
+				<img href="">
+				<div class="banner">
+					<h2>Magna sed phasellus consequat lorem ipsum dolor</h2>
+				</div>
+			</div>
+			</section>
+	</body>
+</html>
