@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Lesson21_2</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+		.wrapper {
+			border: 1px solid black;
+			width: 80%;
+			margin: 0 auto;
+		}
+		
+		@media screen and (min-width: 800px){
+			.block {
+				width: 49%;	
+				float: left;
+				box-sizing: border-box;
+			}
+			.block:first-child {
+				margin-right: 2%;
+			}
+		}
+		@media screen and (max-width: 800px) {
+			.block {
+				margin-bottom: 10px;
+			}
+		}
+		.block {
+			background: green;
+			height: 300px;	
+		}
+		.clearfix {
+				clear: both;
+		}
+		
+    </style>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="row">
+			<div class="block">
+			</div>
+			<div class="block"></div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</body>
+
+</html>
