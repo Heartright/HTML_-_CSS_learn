@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Lesson21_4</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+		.wrapper {
+			width: 80%;
+			margin: 0 auto;
+			border: 1px solid black;
+		}
+		
+		.row {
+			display: flex;
+		}
+		.block {
+			background: green;
+			height: 300px;
+		}
+
+		@media screen and (min-width: 800px) {
+			.row {
+				flex-direction: row; 
+				justify-content: space-between;
+			}
+			.block {
+				width: 49%;
+		
+			}
+		}
+		@media screen and (max-width: 800px) {
+			.row {
+				flex-direction: column; 
+			}
+			.block {
+				width: 100%;
+				margin-bottom: 10px;
+			}
+		}
+		
+    </style>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="row">
+				<div class="block"></div>
+				<div class="block"></div>
+			</div>
+		</div>
+</body>
+
+</html>
