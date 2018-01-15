@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Lesson22_14</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+			.steps_1, .steps_2 {
+				border: 1px solid red;
+				height: 50px;
+				width: 30%;
+				margin-bottom: 20px;
+				transition-property: width;
+				transition-duration: 3s;
+				transition-timing-function: steps(5, start);
+				transition-delay: 0s;
+				
+			}
+			.steps_2 {
+				transition-property: width;
+				transition-duration: 3s;
+				transition-timing-function: steps(5, end);
+				transition-delay: 0s;
+			}
+			
+			.move:hover div {
+				width: 100%;
+			}
+    </style>
+</head>
+
+<body> 	<div class="move">
+			<div class="steps_1"></div>
+			<div class="steps_2"></div>
+		</div>
+</body>
+
+</html>
