@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Lesson23_11</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+			@keyframes anim {
+				from {
+					width: 10%;
+				}
+				to {
+					width: 100%;
+				}
+			}
+			
+			.block1 {
+				border: 1px solid red;
+				width: 30%;
+				padding: 10px;
+				margin-bottom: 30px;
+			}
+			.block2 {
+				border: 1px solid blue;
+				height: 50px;
+				animation: anim 2s ease infinite alternate; 
+				animation-play-state: paused; 
+			}
+			.block1:hover + .block2 {
+				animation-play-state: running; 
+			}
+			
+			
+    </style>
+</head>
+
+<body>
+			<div class="block1">Наведи на меня мышь</div>
+			<div class="block2"></div>
+</body>
+
+</html>
