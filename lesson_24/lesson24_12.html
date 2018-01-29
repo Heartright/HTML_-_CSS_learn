@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Lesson24_12</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+		.wrapper {
+			margin: 150px auto;
+			width: 200px;
+			height: 200px;
+			border: 1px solid red;
+			border-radius: 100px;
+		}
+		.move {
+			position: relative;
+			width: 200px;
+			height: 200px;
+			
+			-webkit-animation: anim_1 7s linear infinite;
+			animation: anim_1 7s linear infinite;
+		}
+		.ball {
+			position: absolute;
+			top: -50px;
+			left: -50px;
+			width: 50px;
+			height: 50px;
+			border-radius: 25px;
+			border: 1px solid red;
+		
+			-webkit-animation: anim_2 7s linear infinite;
+			animation: anim_2 7s linear infinite;
+		}
+		@keyframes anim_1 {
+			0% {
+				transform: rotate(0deg);
+			}
+			100% {
+				transform: rotate(360deg);
+			}
+		
+		}
+		
+		@keyframes anim_2 {
+			0% {
+				background: white;
+			}
+			50% {
+				background: red;
+			}
+			100% {
+				background: white;
+			}
+		}
+    </style>
+</head>
+
+<body>	
+	<div class="wrapper"> 
+		<div class="move">
+			<div class="ball"></div>
+		</div>
+	</div>
+</body>
+
+</html>
