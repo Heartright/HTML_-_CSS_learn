@@ -2,28 +2,49 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Lesson25_5</title>
+    <title>Lesson25_6</title>
     <!-- <link rel="stylesheet" href="style.css"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style>
 		@-webkit-keyframes anim {
 			from {
-				-webkit-transform: rotateY(0deg);
+				-webkit-transform: rotateY(-120deg);
 				transform: rotateY(0deg);
 			}
 			to {
-				-webkit-transform: rotateY(360deg);
-				transform: rotateY(360deg);
+				-webkit-transform: rotateY(240deg);
+				transform: rotateY(240deg);
 			}
 		}
 		@keyframes anim {
 			from {
-				-webkit-transform: rotateY(0deg);
+				-webkit-transform: rotateY(-120deg);
 				transform: rotateY(0deg);
 			}
 			to {
-				-webkit-transform: rotateY(360deg);
-				transform: rotateY(360deg);
+				-webkit-transform: rotateY(240deg);
+				transform: rotateY(240deg);
+			}
+		}
+		
+		@-webkit-keyframes anim {
+			0%, 100% {
+				-webkit-transform: rotateY(180deg);
+				transform: rotateY(180deg);
+			}
+			50% {
+				-webkit-transform: rotateY(240deg);
+				transform: rotateY(240deg);
+			}
+		}
+		@keyframes anim_back {
+			from {
+				-webkit-transform: rotateY(-120deg);
+				transform: rotateY(0deg);
+			}
+			to {
+				-webkit-transform: rotateY(240deg);
+				transform: rotateY(240deg);
 			}
 		}
 		
