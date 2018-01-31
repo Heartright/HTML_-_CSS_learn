@@ -1,84 +1,91 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <title>Lesson25_7</title>
     <!-- <link rel="stylesheet" href="style.css"> -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<style>
-		@-webkit-keyframes anim {
-			from {
-				-webkit-transform: rotateY(0deg);
-				transform: rotateY(0deg);
-			}
-			to {
-				-webkit-transform: rotateY(360deg);
-				transform: rotateY(360deg);
-			}
-		}
-		keyframes anim {
-			from {
-				-webkit-transform: rotateY(0deg);
-				transform: rotateY(0deg);
-			}
-			to {
-				-webkit-transform: rotateY(360deg);
-				transform: rotateY(360deg);
-			}
-		}
-		
-		.wrapper > div {
-			width: 200px;
-			border: 1px solid black;
-			text-align: center;
-			color: white;
-			height: 300px;
-			line-height: 300px;
-			font-size: 27px;
-			position: absolute;
-		}
-		
-		.wrapper {
-			width: 200px;
-			height: 300px;
-			margin: 100px auto 0 auto;
-			position: relative;
-			-webkit-transform-style: preserve-3d;
-			transform-style: preserve-3d;
-			-webkit-animation: anim 4s infinite linear;
-			animation: anim 15s infinite linear;
-			position: relative;
-		}
-		
-		.block_1 {
-			-webkit-transform: translateZ(300px);
-			transform: rotateZ(300px);
-			background-color: #8e3a09;
-		}
-		.block_2 {
-			-webkit-transform: translateZ(-300px) rotateY(180deg);
-			transform: translareZ(-300px) rotateY(180deg);
-			background-color: #6d2176;
-		}
-		.block_3 {
-			-webkit-transform: translateX(300px) rotateY(90deg);
-			transform: translateX(300px) rotateY(90deg);
-			background-color: #b58224;
-			
-		}
-		.block_4 {
-			-webkit-transform: translateX(-300px) rotateY(-90deg);
-			transform: translateX(-300px) rotateY(-90deg);
-			background-color: #83890e;
-		}
-		
-	</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @-webkit-keyframes anim {
+            from {
+                -webkit-transform: rotateY(0deg);
+                transform: rotateY(0deg);
+            }
+            to {
+                -webkit-transform: rotateY(360deg);
+                transform: rotateY(360deg);
+            }
+        }
+
+        keyframes anim {
+            from {
+                -webkit-transform: rotateY(0deg);
+                transform: rotateY(0deg);
+            }
+            to {
+                -webkit-transform: rotateY(360deg);
+                transform: rotateY(360deg);
+            }
+        }
+
+        .wrapper>div {
+            width: 200px;
+            border: 1px solid black;
+            text-align: center;
+            color: white;
+            height: 300px;
+            line-height: 300px;
+            font-size: 27px;
+            position: absolute;
+        }
+
+        .wrapper {
+            width: 200px;
+            height: 300px;
+            margin: 100px auto 0 auto;
+            position: relative;
+            -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+            -webkit-animation: anim 4s infinite linear;
+            animation: anim 15s infinite linear;
+            position: relative;
+        }
+
+        .block_1 {
+            -webkit-transform: translateZ(300px);
+            transform: rotateZ(300px);
+            background-color: #8e3a09;
+        }
+
+        .block_2 {
+            -webkit-transform: translateZ(-300px) rotateY(180deg);
+            transform: translareZ(-300px) rotateY(180deg);
+            background-color: #6d2176;
+        }
+
+        .block_3 {
+            -webkit-transform: translateX(300px) rotateY(90deg);
+            transform: translateX(300px) rotateY(90deg);
+            background-color: #b58224;
+
+        }
+
+        .block_4 {
+            -webkit-transform: translateX(-300px) rotateY(-90deg);
+            transform: translateX(-300px) rotateY(-90deg);
+            background-color: #83890e;
+        }
+
+    </style>
 </head>
+
 <body>
-		<div class="wrapper">
-			<div class="block_1">HTML</div>
-			<div class="block_2">CSS</div>
-			<div class="block_3">PHP</div>
-			<div class="block_4">JavaScript</div>
-		</div>
+    <div class="wrapper">
+        <div class="block_1">HTML</div>
+        <div class="block_2">CSS</div>
+        <div class="block_3">PHP</div>
+        <div class="block_4">JavaScript</div>
+    </div>
+
 </html>

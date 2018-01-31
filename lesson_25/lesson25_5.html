@@ -1,157 +1,191 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <title>Lesson25_5</title>
     <!-- <link rel="stylesheet" href="style.css"> -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<style>
-		@-webkit-keyframes anim {
-			from {
-				-webkit-transform: rotateY(0deg);
-				transform: rotateY(0deg);
-			}
-			to {
-				-webkit-transform: rotateY(360deg);
-				transform: rotateY(360deg);
-			}
-		}
-		@keyframes anim {
-			from {
-				-webkit-transform: rotateY(0deg);
-				transform: rotateY(0deg);
-			}
-			to {
-				-webkit-transform: rotateY(360deg);
-				transform: rotateY(360deg);
-			}
-		}
-		
-		.wrapper> div {
-			width: 500px;
-			height: 300px;
-			-webkit-backface-visibility: visible;
-			backface-visibility: visible;
-			position: absolute;
-			-webkit-transform-origin: left;
-			transform-origin: left;
-			
-		}
-		
-		.wrapper {
-			float: right;
-			width: 500px;
-			height: 100px;
-			margin-top: 100px;
-			position: relative;
-			-webkit-transform-style: preserve-3d;
-			transform-style: preserve-3d;
-			-webkit-animation: anim 4s infinite linear;
-			animation: anim 15s infinite linear;
-			-webkit-transform-origin: left;
-			transform-origin: left;
-		}
-		.wrapper > div > div.op {
-			float: left;
-			background-color: white;
-			opacity: 0.3;
-			width: 195px;
-			height: 100%;
-		}
-		.wrapper > div > div.color_block {
-			width: 300px;
-			height: 100%;
-			color: #ffffff;
-			text-align: center;
-			-webkit-box-sizing: border-box;
-			-moz-box-sizing: border-box;
-			box-sizing: border-box;
-			padding: 30px;
-			font-size: 33px;
-			float: left;
-		}
-		
-		.block_1 {
-			transform: rotateY(0deg);
-			
-			
-		}
-		.block_2 {
-			transform: rotateY(60deg);
-			
-			
-		}
-		.block_3 {
-			transform: rotateY(160deg);
-			
-			
-		}
-		.block_4 {
-			transform: rotateY(180deg);
-			
-		}
-		.block_5 {
-			transform: rotateY(240deg);
-		
-		}
-		.block_6 {
-			transform: rotateY(300deg);
-			
-		}
-		
-		.center {
-			margin-left: auto;
-			margin-right: auto;
-			width: 1000px;
-		}
-		
-		.block_1 div.color_block {
-			background-color: #0000ff;
-			border: 1px solid #000000;
-			border-color: #000000;
-		}
-		.block_2 div.color_block {
-			background-color: #ff0000;
-			border: 1px solid #000000;
-			border-color: #000000;
-		}
-		.block_3 div.color_block {
-			background-color: #83890e;
-			border: 1px solid #000000;
-			border-color: #000000;
-		}
-		.block_4 div.color_block  {
-			background-color: #b58224;
-			border: 1px solid #000000;
-			border-color: #000000;
-		}
-		.block_5 div.color_block {
-			background-color: #6d2176;
-			border: 1px solid #000000;
-			border-color: #000000;	
-		}
-		.block_6 div.color_block {
-			background-color: #8e3a09;
-			border: 1px solid #000000;
-			border-color: #000000;
-		}
-		.wrapper .small {
-			font-size: 19px;
-		}
-		
-	</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @-webkit-keyframes anim {
+            from {
+                -webkit-transform: rotateY(0deg);
+                transform: rotateY(0deg);
+            }
+            to {
+                -webkit-transform: rotateY(360deg);
+                transform: rotateY(360deg);
+            }
+        }
+
+        @keyframes anim {
+            from {
+                -webkit-transform: rotateY(0deg);
+                transform: rotateY(0deg);
+            }
+            to {
+                -webkit-transform: rotateY(360deg);
+                transform: rotateY(360deg);
+            }
+        }
+
+        .wrapper>div {
+            width: 500px;
+            height: 300px;
+            -webkit-backface-visibility: visible;
+            backface-visibility: visible;
+            position: absolute;
+            -webkit-transform-origin: left;
+            transform-origin: left;
+
+        }
+
+        .wrapper {
+            float: right;
+            width: 500px;
+            height: 100px;
+            margin-top: 100px;
+            position: relative;
+            -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+            -webkit-animation: anim 4s infinite linear;
+            animation: anim 15s infinite linear;
+            -webkit-transform-origin: left;
+            transform-origin: left;
+        }
+
+        .wrapper>div>div.op {
+            float: left;
+            background-color: white;
+            opacity: 0.3;
+            width: 195px;
+            height: 100%;
+        }
+
+        .wrapper>div>div.color_block {
+            width: 300px;
+            height: 100%;
+            color: #ffffff;
+            text-align: center;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            padding: 30px;
+            font-size: 33px;
+            float: left;
+        }
+
+        .block_1 {
+            transform: rotateY(0deg);
+
+
+        }
+
+        .block_2 {
+            transform: rotateY(60deg);
+
+
+        }
+
+        .block_3 {
+            transform: rotateY(160deg);
+
+
+        }
+
+        .block_4 {
+            transform: rotateY(180deg);
+
+        }
+
+        .block_5 {
+            transform: rotateY(240deg);
+
+        }
+
+        .block_6 {
+            transform: rotateY(300deg);
+
+        }
+
+        .center {
+            margin-left: auto;
+            margin-right: auto;
+            width: 1000px;
+        }
+
+        .block_1 div.color_block {
+            background-color: #0000ff;
+            border: 1px solid #000000;
+            border-color: #000000;
+        }
+
+        .block_2 div.color_block {
+            background-color: #ff0000;
+            border: 1px solid #000000;
+            border-color: #000000;
+        }
+
+        .block_3 div.color_block {
+            background-color: #83890e;
+            border: 1px solid #000000;
+            border-color: #000000;
+        }
+
+        .block_4 div.color_block {
+            background-color: #b58224;
+            border: 1px solid #000000;
+            border-color: #000000;
+        }
+
+        .block_5 div.color_block {
+            background-color: #6d2176;
+            border: 1px solid #000000;
+            border-color: #000000;
+        }
+
+        .block_6 div.color_block {
+            background-color: #8e3a09;
+            border: 1px solid #000000;
+            border-color: #000000;
+        }
+
+        .wrapper .small {
+            font-size: 19px;
+        }
+
+    </style>
 </head>
+
 <body>
-	<div class="center">
-		<div class="wrapper">
-			<div class="block_1"><div class="op"></div><div class="color_block">Набор</div></div>
-			<div class="block_2"><div class="op"></div><div class="color_block">На курсы</div></div>
-			<div class="block_3"><div class="op"></div><div class="color_block">HTML</div></div>
-			<div class="block_4"><div class="op"></div><div class="color_block">CSS</div></div>
-			<div class="block_5"><div class="op"></div><div class="color_block">PHP</div></div>
-			<div class="block_6"><div class="op"></div><div class="color_block">Звоните
-				<br><span class="small">+375 29 817 68 92</span></div>
-			</div>
-		</div>
-	</div>
+    <div class="center">
+        <div class="wrapper">
+            <div class="block_1">
+                <div class="op"></div>
+                <div class="color_block">Набор</div>
+            </div>
+            <div class="block_2">
+                <div class="op"></div>
+                <div class="color_block">На курсы</div>
+            </div>
+            <div class="block_3">
+                <div class="op"></div>
+                <div class="color_block">HTML</div>
+            </div>
+            <div class="block_4">
+                <div class="op"></div>
+                <div class="color_block">CSS</div>
+            </div>
+            <div class="block_5">
+                <div class="op"></div>
+                <div class="color_block">PHP</div>
+            </div>
+            <div class="block_6">
+                <div class="op"></div>
+                <div class="color_block">Звоните
+                    <br><span class="small">+375 29 817 68 92</span></div>
+            </div>
+        </div>
+    </div>
+
 </html>

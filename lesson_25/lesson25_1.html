@@ -1,35 +1,40 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <title>Lesson25_1</title>
     <!-- <link rel="stylesheet" href="style.css"> -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<style>
-			div {
-				margin: 0 auto;
-			}
-			@-webkit-keyframes anim {
-				from {
-					-webkit-transform: rotateY(0deg);
-				}
-				to {
-					-webkit-transform: rotateY(180deg);
-				}
-			}
-			.block {
-				border: 1px solid black;
-				width: 100px;
-				height: 100px;
-				
-				-webkit-backface-visibility: visibile;
-				-webkit-animation: anim 2s alternate infinite linear;
-			}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div {
+            margin: 0 auto;
+        }
+
+        @-webkit-keyframes anim {
+            from {
+                -webkit-transform: rotateY(0deg);
+            }
+            to {
+                -webkit-transform: rotateY(180deg);
+            }
+        }
+
+        .block {
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+
+            -webkit-backface-visibility: visibile;
+            -webkit-animation: anim 2s alternate infinite linear;
+        }
+
     </style>
 </head>
 
 <body>
-		<div class="block">Привет! Я вращаюсь вдоль оси Y.	</div>
+    <div class="block">Привет! Я вращаюсь вдоль оси Y. </div>
 
 </body>
+
 </html>

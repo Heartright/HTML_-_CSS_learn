@@ -1,132 +1,137 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <title>Lesson25_3</title>
     <!-- <link rel="stylesheet" href="style.css"> -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<style>
-	
-		body {
-			padding: 200px;
-		}
-		.cube div {
-			color: white;
-			width: 100px;
-			height: 100px;
-			line-height: 100px;
-			text-align: center;
-			font-weight: bold;
-			font-size: 40px;
-			-webkit-visibility: visible;
-			backface-visibility: visible;
-		}
-		.cube {
-					
-				border: 1px solid black;
-				width: 100px;
-				height: 100px;
-				margin-right: auto;
-				margin-left: auto;
-				position: relative;
-				-webki-transform-style: preserve-3d;
-				transform-style: preserve-3d;
-				-webkit-animation: anim 4s ease infinite alternate;
-				animation: anim 4s ease infinite alternate;
-		}
-		.center {
-			background-color: #748c0b;
-			position: absolute;
-			top: 0;
-			left: 0;
-		}
-		
-		.top {
-			background-color: red;
-			top: -100px;
-			left: 0;
-			position: absolute;
-			-webkit-transform: rotateX(90deg);
-			transform: rotateX(90deg);
-			-webkit-transform-origin: bottom;
-			transform-origin: bottom;
-		}
-		
-		.bottom {
-			background-color: red;
-			position: absolute;
-			top: 0;
-			left: 0;
-			-webkit-transform: rotateX(90deg);
-			transform: rotateX(90deg);
-			-webkit-transform-origin: bottom;
-			transform-origin: bottom;
-		}
-			
-		.right {
-			background-color: blue;
-			position: absolute;
-			top: 0;
-			left: 100px;
-			-webkit-transform: rotateY(90deg);
-			transform: rotateY(90deg);
-			-webkit-transform-origin: left;
-			transform-origin: left;
-		}
-		
-		.left {
-			background-color: green;
-			position: absolute;
-			top: 0;
-			left: -100px;
-			-webkit-transform: rotateY(-90deg);
-			transform: rotateY(-90deg);
-			-webkit-transform-origin: right;
-			transform-origin: right;
-		}
-		
-		.back {
-			background-color: black;
-			top: 0;
-			left: 0;
-			position: absolute;
-			-webkit-transform: translate3d(0, 0, -100px);
-			transform: translate3d(0, 0, -100px);
-		}
-		
-		@keyframes anim {
-			from { 
-			-webkit-transform: rotate3d(1,1,1, 0deg);
-			transform: rotate3d(1,1,1, 0deg);
-			
-			}
-			to {
-			-webkit-transform: rotate3d(1,1,1, 180deg);
-			transform: rotate3d(1,1,1, 180deg);
-			}
-		}
-		
-		@-webkit-keyframes anim {
-			from { 
-			-webkit-transform: rotate3d(1,1,1, 0deg);
-			transform: rotate3d(1,1,1, 0deg);
-			
-			}
-			to {
-			-webkit-transform: rotate3d(1,1,1, 180deg);
-			transform: rotate3d(1,1,1, 180deg);
-			}
-		}
-		
-	</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            padding: 200px;
+        }
+
+        .cube div {
+            color: white;
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 40px;
+            -webkit-visibility: visible;
+            backface-visibility: visible;
+        }
+
+        .cube {
+
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+            margin-right: auto;
+            margin-left: auto;
+            position: relative;
+            -webki-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+            -webkit-animation: anim 4s ease infinite alternate;
+            animation: anim 4s ease infinite alternate;
+        }
+
+        .center {
+            background-color: #748c0b;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .top {
+            background-color: red;
+            top: -100px;
+            left: 0;
+            position: absolute;
+            -webkit-transform: rotateX(90deg);
+            transform: rotateX(90deg);
+            -webkit-transform-origin: bottom;
+            transform-origin: bottom;
+        }
+
+        .bottom {
+            background-color: red;
+            position: absolute;
+            top: 0;
+            left: 0;
+            -webkit-transform: rotateX(90deg);
+            transform: rotateX(90deg);
+            -webkit-transform-origin: bottom;
+            transform-origin: bottom;
+        }
+
+        .right {
+            background-color: blue;
+            position: absolute;
+            top: 0;
+            left: 100px;
+            -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+            -webkit-transform-origin: left;
+            transform-origin: left;
+        }
+
+        .left {
+            background-color: green;
+            position: absolute;
+            top: 0;
+            left: -100px;
+            -webkit-transform: rotateY(-90deg);
+            transform: rotateY(-90deg);
+            -webkit-transform-origin: right;
+            transform-origin: right;
+        }
+
+        .back {
+            background-color: black;
+            top: 0;
+            left: 0;
+            position: absolute;
+            -webkit-transform: translate3d(0, 0, -100px);
+            transform: translate3d(0, 0, -100px);
+        }
+
+        @keyframes anim {
+            from {
+                -webkit-transform: rotate3d(1, 1, 1, 0deg);
+                transform: rotate3d(1, 1, 1, 0deg);
+
+            }
+            to {
+                -webkit-transform: rotate3d(1, 1, 1, 180deg);
+                transform: rotate3d(1, 1, 1, 180deg);
+            }
+        }
+
+        @-webkit-keyframes anim {
+            from {
+                -webkit-transform: rotate3d(1, 1, 1, 0deg);
+                transform: rotate3d(1, 1, 1, 0deg);
+
+            }
+            to {
+                -webkit-transform: rotate3d(1, 1, 1, 180deg);
+                transform: rotate3d(1, 1, 1, 180deg);
+            }
+        }
+
+    </style>
 </head>
+
 <body>
-		<div class="cube">
-			<div class="top">1</div>
-			<div class="bottom">2</div>
-			<div class="center">3</div>
-			<div class="back">4</div>
-			<div class="left">5</div>
-			<div class="right">6</div>
-		</div>
+    <div class="cube">
+        <div class="top">1</div>
+        <div class="bottom">2</div>
+        <div class="center">3</div>
+        <div class="back">4</div>
+        <div class="left">5</div>
+        <div class="right">6</div>
+    </div>
+
 </html>
