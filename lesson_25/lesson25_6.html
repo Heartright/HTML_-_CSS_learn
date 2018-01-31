@@ -9,7 +9,7 @@
 		@-webkit-keyframes anim {
 			from {
 				-webkit-transform: rotateY(-120deg);
-				transform: rotateY(0deg);
+				transform: rotateY(-120deg);
 			}
 			to {
 				-webkit-transform: rotateY(240deg);
@@ -19,7 +19,7 @@
 		@keyframes anim {
 			from {
 				-webkit-transform: rotateY(-120deg);
-				transform: rotateY(0deg);
+				transform: rotateY(-120deg);
 			}
 			to {
 				-webkit-transform: rotateY(240deg);
@@ -27,7 +27,7 @@
 			}
 		}
 		
-		@-webkit-keyframes anim {
+		@-webkit-keyframes anim_back {
 			0%, 100% {
 				-webkit-transform: rotateY(180deg);
 				transform: rotateY(180deg);
@@ -40,7 +40,7 @@
 		@keyframes anim_back {
 			from {
 				-webkit-transform: rotateY(-120deg);
-				transform: rotateY(0deg);
+				transform: rotateY(-120deg);
 			}
 			to {
 				-webkit-transform: rotateY(240deg);
@@ -72,6 +72,7 @@
 			-webkit-transform-origin: left;
 			transform-origin: left;
 		}
+		
 		.wrapper > div > div.op {
 			float: left;
 			background-color: white;
@@ -79,6 +80,7 @@
 			width: 195px;
 			height: 100%;
 		}
+		
 		.wrapper > div > div.color_block {
 			width: 300px;
 			height: 100%;
