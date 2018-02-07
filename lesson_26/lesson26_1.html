@@ -1,0 +1,93 @@
+1. Примешивание .red должно скомпилироваться в color: red.
+.red(){
+	color:red;
+}
+p {
+	.red;
+}
+2. Примешивание .blue должно скомпилироваться в color: blue.
+
+.blue(){
+	color:blue;
+}
+p {
+	.blue;
+}
+
+3. Примешивание .green должно скомпилироваться в color: green.
+
+.green(){
+	color: green;
+}
+p {
+	.green;
+}
+
+
+4. Функция .h(число) должна компилироваться в height: число. Пример: .h(200px) скомпилируется в height: 200px.
+
+.h(@h){
+	height: @h;
+}
+p {
+	.h(200px);
+}
+
+
+5. Функция .w(число) должна компилироваться в width: число. Пример: .w(200px) скомпилируется в width: 200px.
+
+.w(@w){
+	widht: @w;
+}
+p {
+	.w(200px);
+}
+
+6. Функция .placeholder() должна компилироваться в кроссбраузерный вариант псевдоэлемента placeholder.
+
+.placeholder(@test){
+	&:-ms-placeholder{@test();}
+ 	&::-moz-placeholder{@test();}
+	&::-webkit-input-placeholder{@test();}
+	&::placeholder{@test();} 
+}
+input{
+	.placeholder({
+		color: red;
+	});
+}
+7. Функция .selection() должна компилироваться в кроссбраузерный вариант псевдоэлемента selection.
+.selection(@test){
+	&:-ms-selection{@test();}
+ 	&::-moz-selection{@test();}
+	&::-webkit-input-selection{@test();}
+	&::placeholder{@test();} 
+}
+p{
+	.selection({
+		color: red;
+	});
+}
+
+8. Функция .keyframes() должна компилироваться в кроссбраузерный вариант команды keyframes.
+.keyframes(@name, @code){ 
+@-o-keyframes @name {@code();} 
+@-moz-keyframes @name {@code();} 
+@-webkit-keyframes @name {@code();} 
+@keyframes @name {@code();} 
+} 
+.keyframes(anim,{ 
+from{ 
+width: 100px; 
+} 
+to{ 
+width: 200px; 
+} 
+} 
+); 
+
+9. Классы от .f1 до .f100 должны компилироваться в font-size от 1px до 100px. Пример: .f10 скомпилируется в font-size: 10px.
+
+
+
+ 
