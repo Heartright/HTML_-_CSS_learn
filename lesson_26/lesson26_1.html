@@ -88,7 +88,11 @@ width: 200px;
 
 9. Классы от .f1 до .f100 должны компилироваться в font-size от 1px до 100px. Пример: .f10 скомпилируется в font-size: 10px.
 
-@for $i from 1 through 100
-.f#{$i}
-font-size: 1px * $i
+.gen-a(100); 
+.gen-a(@n, @i: 1) when (@i =< @n){ 
+.f@{i} { 
+font-size: (1px * @i); 
+} 
+.gen-a(@n, (@i + 1)); 
+}
  

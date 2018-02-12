@@ -26,69 +26,87 @@ p{
 
 4. Функция .h(число) должна компилироваться в height: число. Пример: .h(200px) скомпилируется в height: 200px.
 
-.h(@h){
-	height: @h;
-}
-p {
-	.h(200px);
-}
+@mixin h($h){ 
+height: $h; 
+} 
 
+p{ 
+@include h(200px); 
+} 
 
 5. Функция .w(число) должна компилироваться в width: число. Пример: .w(200px) скомпилируется в width: 200px.
 
-.w(@w){
-	widht: @w;
-}
-p {
-	.w(200px);
-}
+@mixin w($w){ 
+width: $w; 
+} 
+
+p{ 
+@include w(200px); 
+} 
 
 6. Функция .placeholder() должна компилироваться в кроссбраузерный вариант псевдоэлемента placeholder.
 
-.placeholder(@test){
-	&:-ms-placeholder{@test();}
- 	&::-moz-placeholder{@test();}
-	&::-webkit-input-placeholder{@test();}
-	&::placeholder{@test();} 
+@mixin placeholder($color,$bg:red){
+&::-moz-placeholder{
+color: #{$color};
+background: #{$bg};
+};
+&::-webkit-placeholder{
+color: #{$color};
+background: #{$bg};
+};
+&::placeholder{
+color: #{$color};
+background: #{$bg};
+};
 }
 input{
-	.placeholder({
-		color: red;
-	});
+@include placeholder(blue);
 }
+
 7. Функция .selection() должна компилироваться в кроссбраузерный вариант псевдоэлемента selection.
-.selection(@test){
-	&:-ms-selection{@test();}
- 	&::-moz-selection{@test();}
-	&::-webkit-input-selection{@test();}
-	&::placeholder{@test();} 
+
+@mixin selection ($color: black, $w: 100px){
+&::-moz-selection{
+color: #{$color};
+width: #{$w};
+} &::-webkit-selection{
+color: #{$color};
+width: #{$w};
 }
-p{
-	.selection({
-		color: red;
-	});
+&::selection{
+color: #{$color};
+width: #{$w};}
 }
+p {
+@include selection (white, 200px);
+}
+
 
 8. Функция .keyframes() должна компилироваться в кроссбраузерный вариант команды keyframes.
-.keyframes(@name, @code){ 
-@-o-keyframes @name {@code();} 
-@-moz-keyframes @name {@code();} 
-@-webkit-keyframes @name {@code();} 
-@keyframes @name {@code();} 
-} 
-.keyframes(anim,{ 
-from{ 
-width: 100px; 
-} 
-to{ 
-width: 200px; 
-} 
-} 
-); 
+@mixin keyframes($test) {
+  @-webkit-keyframes #{$test} {
+    @content; 
+  }
+  @-moz-keyframes #{$test} {
+    @content;
+  }
+  @-ms-keyframes #{$test} {
+    @content;
+  }
+  @keyframes #{$test} {
+    @content;
+  } 
+}
+@include keyframes(move) {
+  0% {
+     transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
 
-9. Классы от .f1 до .f100 должны компилироваться в font-size от 1px до 100px. Пример: .f10 скомпилируется в font-size: 10px.
-
-@for $i from 1 through 100
-.f#{$i}
-font-size: 1px * $i
- 
+@for $i from 1 through 100 { 
+.f#{$i} {font-size: 1px * $i; } 
+}
