@@ -1,0 +1,365 @@
+
+html,
+body,
+div,
+fieldset,
+form,
+article,
+aside,
+footer,
+header,
+menu,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  font: 16px/24px 'Arial', sans-serif;
+  color: #333;
+  min-width: 1240px;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: none;
+}
+
+* {
+  max-height: 100000px;
+}
+textarea {
+  -webkit-appearance: none;
+}
+
+a {
+  color: #e7780d;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+ 
+}
+
+h1 {
+  font-size: 38px;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #000;
+}
+
+h2 {
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: bold;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: bold;
+  color: #000;
+}
+
+#wrapper {
+  position: relative;
+  background: #f6f6f6;
+}
+
+#content {
+  background-color: white;
+}
+
+.price-section,
+.contract-section {
+  padding-bottom: 40px;
+  background-color: #f6f6f6;
+}
+
+.accordion {
+  padding: 0;
+  list-style: none;
+  height: 1%;
+ 
+  overflow: hidden;
+}
+
+.accordion li {
+  margin: 0 8px 20px 4px;
+  font-size: 20px;
+  line-height: 24px;
+  border-radius: 4px;
+  background: #FFCC00;
+}
+
+.accordion h3 {
+  text-align: center;
+  display: block;
+  margin: 0;
+  padding: 15px 25px;
+  position: relative;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+}
+
+.accordion h3 em {
+  font-style: normal;
+}
+
+.price-nav__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  border-radius: 3px;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.price-nav__link {
+  display: block;
+  padding: 10px 20px;
+  line-height: 1.1;
+  color: #000000;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.price-nav__link:hover {
+  background-color: #ffcc00;
+  color: #000000;
+}
+
+.accordion li.active a:hover {
+  background: #f2f0f1;
+}
+
+.accordion li.active:hover {
+  border: 1px solid #ccc;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  background: #fff;
+}
+
+.table tr,
+.table tr td {
+  margin: 0;
+  padding: 8px;
+  border: 1px solid #bbb;
+  font-size: 16px;
+  line-height: 18px;
+  transition: 0.3s all ease;
+}
+
+.table2 tr td:nth-child(2) {
+  font-weight: bold;
+}
+
+.table tr td p {
+  font-size: 16px;
+  line-height: 18px;
+  margin-bottom: 0px;
+}
+
+.table thead {
+  background: #f5f5f5;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.table thead .table-head {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.table .table-head {
+  font-weight: 700;
+  background-color: #f5f5f5;
+}
+
+.table .table-total {
+  text-align: right;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.table .works-name {
+  width: 65%;
+}
+
+.tabler {
+  margin: 0 0 20px;
+  border-collapse: collapse;
+  width: 100%;
+  background: #fff;
+}
+
+.tabler tr,
+.tabler tr td {
+  margin: 0;
+  padding: 12px;
+  border: 1px solid #d1d1d1;
+  font-size: 16px;
+  line-height: 18px;
+  transition: 0.3s all ease;
+}
+
+.tabler thead {
+  background-color: #f0bc1e;
+  color: #000000;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.tabler tbody tr:first-child {
+  background-color: #f5f5f5;
+}
+
+.table tbody tr:hover {
+  background-color: #fffccc;
+}
+
+
+.table-new {
+  border-collapse: collapse;
+  width: 100%;
+  background: #fff;
+}
+
+.table-new tr td {
+  margin: 0;
+  padding: 8px;
+  border: 1px solid #bbb;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.table-new tr td p {
+  font-size: 16px;
+  line-height: 18px;
+  margin-bottom: 0px;
+}
+
+.table-new thead {
+  background: #d5d5d5;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
+}
+
+.table-new > thead > tr > td:nth-child(3) {
+  width: 5%;
+}
+
+.table-new > thead > tr > td:last-child {
+  width: 30%;
+}
+
+.table-new tr.name {
+  background: #737373;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: bold;
+  color: white;
+}
+
+.table-new tr.name:hover {
+  background: #737373;
+}
+
+.table-new tr.summa1:hover {
+  background: #e7e7e7;
+}
+
+.table-new tr.summa2:hover {
+  background: #ffd20d;
+}
+
+.table-new thead tr:last-child td:before {
+  display: inline-block;
+  float: left;
+  position: relative;
+  border: 1px solid #fdd015;
+  border-radius: 50%;
+  background: #fdd015;
+  width: 8px;
+  height: 8px;
+  content: "";
+  top: 5px;
+  margin-right: 8px;
+}
+
+.table-new tr.summa1 {
+  background: #e7e7e7;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: right;
+  font-weight: normal;
+}
+
+.table-new tr.summa2 {
+  background: #ffd20d;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: right;
+  font-weight: normal;
+}
+
+.table-new tbody tr:hover {
+  background-color: #fffae7;
+  color: black;
+}
+
+.right-text {
+  text-align: right !important;
+}
+
+.table-futures {
+  margin: 0 auto;
+}
+
+.table-futures td {
+  vertical-align: middle;
+}
+
+.prices__wrapper {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.prices {
+  padding: 30px 20px 20px;
+  
+}
+.slide-accordion {
+	padding: 0px;.
+	color: white;
+}
